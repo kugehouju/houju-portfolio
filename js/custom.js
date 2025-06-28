@@ -349,24 +349,24 @@ $(function () {
             var tl2 = new TimelineMax();
             setTimeout(function () {
               tl2;
-              tl2.set(img, { scale: "1.2", autoAlpha: 1 }).to(cover, 1, {
+              tl2.set(img, { scale: "1.2", autoAlpha: 1 }).to(cover, 0.6, {
                 marginLeft: "0",
                 ease: Expo.easeInOut,
                 onComplete() {
                   tl2.set(revealContent, { autoAlpha: 1 });
-                  tl2.to(cover, 1, {
+                  tl2.to(cover, 0.6, {
                     marginLeft: "102%",
                     ease: Expo.easeInOut,
                   });
                   tl2.to(
                     img,
-                    2,
+                    1.2,
                     { scale: "1.0", ease: Linear.easeNone },
-                    "-=2.5"
+                    "-=1.5"
                   );
                 },
               });
-            }, i * 200);
+            }, i * 100);
 
             var scene = new ScrollMagic.Scene({
               triggerElement: this,

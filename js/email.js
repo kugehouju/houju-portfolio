@@ -1,9 +1,7 @@
-// EmailJSの初期化
 (function () {
-  emailjs.init("3n6j2CZeu1smbDFrT"); // ここに本物のPublic Keyを入れてください
+  emailjs.init("3n6j2CZeu1smbDFrT");
 })();
 
-// フォーム送信処理
 window.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("contact-form");
   if (form) {
