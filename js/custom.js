@@ -411,12 +411,12 @@ $(function () {
         var tl2 = new TimelineMax();
 
         setTimeout(function () {
-          tl2.to(cover, 1, {
+          tl2.to(cover, 0.6, {
             marginLeft: "0",
             ease: Expo.easeInOut,
             onComplete() {
               tl2.set(revealContent, { x: 0 });
-              tl2.to(cover, 1, { marginLeft: "102%", ease: Expo.easeInOut });
+              tl2.to(cover, 0.6, { marginLeft: "102%", ease: Expo.easeInOut });
             },
           });
         }, heroNum * 0);
