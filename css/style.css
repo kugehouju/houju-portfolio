@@ -830,21 +830,21 @@ h4,
   outline: none;
 }
 
-.untree_co-section {
+.section-container {
   padding: 7rem 0;
 }
-.untree_co-section .heading,
-.untree_co-section .subheading {
+.section-container .heading,
+.section-container .subheading {
   color: #222222;
 }
-.untree_co-section .heading strong,
-.untree_co-section .subheading strong {
+.section-container .heading strong,
+.section-container .subheading strong {
   font-weight: 700;
 }
-.untree_co-section .heading {
+.section-container .heading {
   font-size: 40px;
 }
-.untree_co-section .subheading {
+.section-container .subheading {
   font-size: 18px;
   font-family: "PT Mono", monospace;
 }
